@@ -44,6 +44,25 @@ Estas tres APIs son públicas y gratuitas. Si tu red bloquea alguno de estos
 dominios, la app lo indica con un mensaje de error y sigue funcionando con
 la tabla MET local para ejercicio y la entrada manual para comidas.
 
+## Abrir en el móvil
+
+La app es una PWA (web app instalable): incluye manifest, iconos y meta
+tags para que el navegador del móvil ofrezca "Añadir a pantalla de
+inicio" y se abra a pantalla completa como una app nativa. El layout es
+responsive desde el primer breakpoint.
+
+Cada push a `master` la despliega automáticamente en GitHub Pages
+mediante `.github/workflows/deploy-pages.yml`, en:
+
+```
+https://jotacamarillo.github.io/PRUEBA/
+```
+
+(La primera vez, si Pages no se activa solo, hay que entrar una vez en
+Settings → Pages → Source → "GitHub Actions" en el repositorio.) Abre
+esa URL desde el navegador del móvil y, en el menú, elige "Añadir a
+pantalla de inicio" para tenerla como un icono más.
+
 ## Desarrollo
 
 ```bash
